@@ -113,8 +113,9 @@ def test_cached_query_identifier_cannot_reuse_a_different_topic(tmp_path):
     file.write_text(json.dumps({**item, "query": "\u8702\u7a9d\u7ed3\u6784"}))
     with pytest.raises(ValueError, match="new --out directory"):
         run_recall.cached_query(file, item)
-    file.write_text(json.dumps(item))
-    assert run_recall.cached_query(file, item) == item
+    record = {**item, "ranking_version": TagsQuery.RANKING_VERSION}
+    file.write_text(json.dumps(record))
+    assert run_recall.cached_query(file, item) == record
 
 
 def test_cache_mismatch_stops_before_metadata_writes_and_database_access(tmp_path, monkeypatch):

@@ -1,5 +1,7 @@
 """Milvus client wrapper used for abstract-level semantic retrieval."""
 
+import math
+
 from pymilvus import MilvusClient
 
 
@@ -44,3 +46,25 @@ class MilvusClientManager:
         )
         print(f"Number of Milvus query results: {len(results)}")
         return results
+
+    def semantic_score(self, distance) -> float:
+        """Convert a raw hit to a score where larger means more similar.
+
+        Milvus calls the returned field ``distance`` for all metrics. COSINE
+        and IP are similarities; L2 is a squared distance. Its reciprocal
+        mapping keeps the score nonnegative and preserves nearest-first order.
+        """
+        metric = str(self.query_kword["search_params"].get("metric_type", "")).upper()
+        if metric not in {"COSINE", "IP", "L2"}:
+            raise ValueError(f"Unsupported Milvus semantic metric: {metric!r}")
+        try:
+            value = float(distance)
+        except (TypeError, ValueError) as exc:
+            raise ValueError(f"Invalid Milvus {metric} score: {distance!r}") from exc
+        if isinstance(distance, bool) or not math.isfinite(value):
+            raise ValueError(f"Invalid Milvus {metric} score: {distance!r}")
+        if metric == "L2":
+            if value < 0:
+                raise ValueError(f"Milvus L2 distance must be nonnegative: {value}")
+            return 1.0 / (1.0 + value)
+        return value

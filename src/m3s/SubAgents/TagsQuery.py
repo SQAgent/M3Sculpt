@@ -48,6 +48,7 @@ _KNOWN_PERFORMANCE_TYPES = [
 
 KEYWORD_PARSE_PROMPT = PROMPTS["tags_keyword_parse"]
 TAGS_ANSWER_PROMPT = PROMPTS["tags_answer"]
+RANKING_VERSION = "metric-aware-semantic-v1"
 
 
 def _extract_keywords(query: str) -> List[str]:
@@ -218,14 +219,33 @@ class TagsQueryHandler:
         if embeddings is None:
             return {}
         similar_vectors = self._retrieve_entities_from_milvus(embeddings)
-        candidate_set = set(candidate_dois)
-        seen: Dict[str, float] = {}
+        return self._score_milvus_hits(similar_vectors, candidate_dois)
+
+    def _score_milvus_hits(self, similar_vectors, candidate_dois=None) -> Dict[str, float]:
+        """Keep each DOI's most similar hit under the actual search metric."""
+        candidate_set = set(candidate_dois) if candidate_dois is not None else None
+        scores: Dict[str, float] = {}
         for item in similar_vectors:
             doi = re.sub(r"/paper.*$", "", item.get("id") or "")
-            distance = item.get("distance", 1.0)
-            if doi in candidate_set and (doi not in seen or distance < seen[doi]):
-                seen[doi] = distance
-        return {doi: 1.0 - dist for doi, dist in seen.items()}
+            if not doi or (candidate_set is not None and doi not in candidate_set):
+                continue
+            score = self.milvus_client.semantic_score(item.get("distance"))
+            if doi not in scores or score > scores[doi]:
+                scores[doi] = score
+        return scores
+
+    @staticmethod
+    def _normalize_semantic_scores(scores: Dict[str, float]) -> Dict[str, float]:
+        """Scale semantic scores to [0, 1] without reversing negative similarities."""
+        if not scores:
+            return {}
+        scale = max(abs(value) for value in scores.values())
+        if scale == 0:
+            return {doi: 0.0 for doi in scores}
+        scaled = {doi: value / scale for doi, value in scores.items()}
+        floor = min(0.0, min(scaled.values()))
+        span = max(scaled.values()) - floor
+        return {doi: (value - floor) / span if span else 0.0 for doi, value in scaled.items()}
 
     def _get_tags_content(self, doi_list: List[str]) -> Dict[str, Dict[str, Any]]:
         query = """
@@ -346,6 +366,7 @@ class TagsQueryHandler:
         candidate_dois = self._filter_dois_by_tags(meta_types, perf_types)
 
         fallback_used = False
+        semantic_scores = None
         if not candidate_dois:
             print("  TAGS returned 0 results, falling back to pure Milvus search")
             report("No matching tags; use semantic vector retrieval")
@@ -354,13 +375,9 @@ class TagsQueryHandler:
             if embeddings is None:
                 return {"answer": "No relevant papers found.", "top2_dois": [], "doi_info": {}, "tags_content": {}, "subfigures": {}, "fallback_used": fallback_used}
             similar_vectors = self._retrieve_entities_from_milvus(embeddings)
-            seen: Dict[str, float] = {}
-            for item in similar_vectors:
-                doi = re.sub(r"/paper.*$", "", item.get("id") or "")
-                distance = item.get("distance", 1.0)
-                if doi not in seen or distance < seen[doi]:
-                    seen[doi] = distance
-            candidate_dois = list(seen.keys())[:50]
+            semantic_scores = self._score_milvus_hits(similar_vectors)
+            candidate_dois = sorted(semantic_scores, key=semantic_scores.get, reverse=True)[:50]
+            semantic_scores = {doi: semantic_scores[doi] for doi in candidate_dois}
             if not candidate_dois:
                 return {"answer": "No relevant papers found.", "top2_dois": [], "doi_info": {}, "tags_content": {}, "subfigures": {}, "fallback_used": fallback_used}
 
@@ -374,7 +391,8 @@ class TagsQueryHandler:
 
         print("Step 4: Compute semantic scores")
         report("Compute semantic similarity")
-        semantic_scores = self._compute_semantic_scores(candidate_dois)
+        if semantic_scores is None:
+            semantic_scores = self._compute_semantic_scores(candidate_dois)
 
         print("Step 5: Compute keyword scores")
         report("Compute keyword matching scores")
@@ -382,12 +400,12 @@ class TagsQueryHandler:
 
         print("Step 6: Combine scores (0.5 semantic + 0.5 keyword)")
         report("Rank candidate papers")
-        max_sem = max(semantic_scores.values()) if semantic_scores else 1.0
+        normalized_semantic = self._normalize_semantic_scores(semantic_scores)
         max_kw = max(keyword_scores.values()) if keyword_scores else 1.0
 
         combined_scores: Dict[str, float] = {}
         for doi in candidate_dois:
-            sem_norm = (semantic_scores.get(doi, 0.0) / max_sem) if semantic_scores else 0.0
+            sem_norm = normalized_semantic.get(doi, 0.0)
             kw_norm = (keyword_scores.get(doi, 0.0) / max_kw) if keyword_scores else 0.0
             combined_scores[doi] = 0.5 * sem_norm + 0.5 * kw_norm
 
@@ -423,5 +441,6 @@ class TagsQueryHandler:
             "subfigures": subfigures,
             "fallback_used": fallback_used,
             "ranked_dois": ranked_dois,
+            "ranking_version": RANKING_VERSION,
             "screen_rejected": rejected,
         }

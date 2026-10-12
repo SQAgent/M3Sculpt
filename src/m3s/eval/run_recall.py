@@ -75,6 +75,7 @@ def evaluate_query(item, cases, evidences, cache, args, neo4j_client, collection
                         "hit_round": hit_round, "rounds_available": len(accepted),
                         "covered_subimages": len(covered), "per_round": per_round})
     return {"query_id": item["query_id"], "query": item["query"], "kind": item["kind"],
+            "ranking_version": ranking["ranking_version"],
             "ranked_total": len(ranking["ranked_dois"]), "fallback_used": ranking["fallback_used"],
             "recommended": rounds, "screen_log": screener.log, "cases": results}
 
@@ -112,7 +113,7 @@ def summarize(records, rounds):
 
 
 def cached_query(path, item):
-    """Reject completed records from a different query with the same identifier."""
+    """Reject completed records from a different query or retrieval scoring version."""
     if not path.is_file():
         return None
     record = json.loads(path.read_text(encoding="utf-8"))
@@ -121,6 +122,7 @@ def cached_query(path, item):
             f"Cached query {item['query_id']} differs from the current query set. "
             "Use a new --out directory or explicitly use --no-cache to recompute."
         )
+    recall.require_current_ranking(record)
     return record
 
 
@@ -144,6 +146,11 @@ def main():
         item["query_id"]: cached_query(out / "per_query" / f"{item['query_id']}.json", item)
         for item in queries
     }
+    if not args.no_cache:
+        for item in queries:
+            ranking = cache.get("rank", item["query"])
+            if ranking is not None:
+                recall.require_current_ranking(ranking)
     (out / "queries.json").write_text(json.dumps(queries, ensure_ascii=False, indent=2), encoding="utf-8")
     (out / "target_cases.json").write_text(json.dumps(cases, ensure_ascii=False, indent=2), encoding="utf-8")
 

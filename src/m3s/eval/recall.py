@@ -14,7 +14,7 @@ from m3s.doi_workflow import FIELDS, closest_row, source_paths, within_tolerance
 from m3s.llm import chat_json
 from m3s.prompts import PROMPTS
 from m3s.screening import contradiction, verdict_from_json
-from m3s.SubAgents.TagsQuery import TagsQueryHandler
+from m3s.SubAgents.TagsQuery import RANKING_VERSION, TagsQueryHandler
 
 SCREEN_LIMIT = 20  # Same bound as the serving workflow's per-round screening.
 
@@ -112,16 +112,27 @@ class Screener:
         return "" if verdict["is_relevant"] else verdict["reason"]
 
 
+def require_current_ranking(record):
+    """Reject cached rankings or completed evaluations from before the metric fix."""
+    if record.get("ranking_version") != RANKING_VERSION:
+        raise ValueError(
+            "Cached ranking uses an outdated or unknown semantic scoring version. "
+            "Use a new --out directory or explicitly use --no-cache to recompute."
+        )
+
+
 def retrieve(query, cache, use_llm=True):
     """Rank papers for one query exactly as the workflow does, without any target."""
     cached = cache.get("rank", query)
     if cached is not None:
+        require_current_ranking(cached)
         return cached
     handler = TagsQueryHandler(create_database_config_from_env(), query, strict_errors=True)
     try:
         started = time.time()
         result = handler.run(top_k=0)
         payload = {"query": query, "seconds": round(time.time() - started, 2),
+                   "ranking_version": RANKING_VERSION,
                    "ranked_dois": result.get("ranked_dois", []),
                    "fallback_used": result.get("fallback_used", False),
                    "titles": {doi: info.get("title", "") for doi, info in result.get("doi_info", {}).items()},
