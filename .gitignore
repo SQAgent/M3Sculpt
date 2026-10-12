@@ -47,6 +47,7 @@ tmp.log
 
 # Local agent/runtime artifacts
 .agent/
+/AGENTS.md
 
 # M3Sculptor generated outputs
 M3Sculptor_graph.png
