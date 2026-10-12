@@ -1,0 +1,64 @@
+# Environment
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+
+codex/*
+output/*
+outputs/*
+achievements/*
+.data.back/*
+tests/*
+tmp/*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+back*
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+log/
+tmp.log
+
+# LangGraph / runtime
+.langgraph_api/
+.langgraph/
+
+# Local agent/runtime artifacts
+.agent/
+
+# M3Sculptor generated outputs
+M3Sculptor_graph.png
+hunyuan/
+morphology/
+image_first/
+target_morphology_optimization/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo

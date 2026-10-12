@@ -1,0 +1,174 @@
+{
+  "figure_number": 3,
+  "additional_benchmark_records": [
+    {
+      "model": "Qwen3.8-Max",
+      "n": 2426,
+      "correct": 1915,
+      "accuracy": 78.93652102225886,
+      "unanswered": 2
+    },
+    {
+      "model": "DeepSeek-V4-Pro",
+      "n": 2426,
+      "correct": 1921,
+      "accuracy": 79.1838417147568,
+      "unanswered": 0
+    }
+  ],
+  "mmlu_records": [
+    {
+      "model": "M3LLM-7B",
+      "epoch": 0,
+      "n": 14042,
+      "correct": 9504,
+      "accuracy": 67.68266628685373
+    },
+    {
+      "model": "M3LLM-7B",
+      "epoch": 1,
+      "n": 14042,
+      "correct": 9639,
+      "accuracy": 68.64406779661017
+    },
+    {
+      "model": "M3LLM-7B",
+      "epoch": 2,
+      "n": 14042,
+      "correct": 9569,
+      "accuracy": 68.14556331006979
+    },
+    {
+      "model": "M3LLM-7B",
+      "epoch": 3,
+      "n": 14042,
+      "correct": 9542,
+      "accuracy": 67.9532830081185
+    },
+    {
+      "model": "M3LLM-7B",
+      "epoch": 4,
+      "n": 14042,
+      "correct": 9474,
+      "accuracy": 67.46902150690785
+    },
+    {
+      "model": "M3LLM-7B",
+      "epoch": 5,
+      "n": 14042,
+      "correct": 9475,
+      "accuracy": 67.47614299957272
+    },
+    {
+      "model": "M3LLM-7B",
+      "epoch": 6,
+      "n": 14042,
+      "correct": 9393,
+      "accuracy": 66.89218060105398
+    },
+    {
+      "model": "M3LLM-27B",
+      "epoch": 0,
+      "n": 14042,
+      "correct": 11492,
+      "accuracy": 81.84019370460048
+    },
+    {
+      "model": "M3LLM-27B",
+      "epoch": 1,
+      "n": 14042,
+      "correct": 11349,
+      "accuracy": 80.82182025352513
+    },
+    {
+      "model": "M3LLM-27B",
+      "epoch": 2,
+      "n": 14042,
+      "correct": 11305,
+      "accuracy": 80.50847457627118
+    },
+    {
+      "model": "M3LLM-27B",
+      "epoch": 3,
+      "n": 14042,
+      "correct": 11286,
+      "accuracy": 80.3731662156388
+    },
+    {
+      "model": "M3LLM-27B",
+      "epoch": 4,
+      "n": 14042,
+      "correct": 11332,
+      "accuracy": 80.70075487822247
+    },
+    {
+      "model": "M3LLM-27B",
+      "epoch": 5,
+      "n": 14042,
+      "correct": 11320,
+      "accuracy": 80.61529696624413
+    },
+    {
+      "model": "M3LLM-27B",
+      "epoch": 6,
+      "n": 14042,
+      "correct": 11312,
+      "accuracy": 80.55832502492522
+    }
+  ],
+  "mechanical_epoch_curves": [
+    [
+      81.03874690364009,
+      80.62654575455757,
+      80.46166529492456,
+      79.80214345639251,
+      79.47238253712649,
+      78.9365210234389
+    ],
+    [
+      75.5976916562295,
+      76.0511129401006,
+      76.2159933997336,
+      75.43281119659649,
+      75.88623248046758,
+      74.85572958788096
+    ]
+  ],
+  "mechanical_epoch0": {
+    "M3LLM-7B": 69.5,
+    "M3LLM-27B": 78.73
+  },
+  "benchmark_models": [
+    "Qwen2.5-7B-Instruct",
+    "Qwen3-235B-A22B",
+    "DeepSeek-V3",
+    "DeepSeek-R1",
+    "Qwen2.5-72B-Instruct",
+    "M$^3$LLM-7B",
+    "DeepSeek-V4-Flash (Q4)",
+    "Qwen3.6-27B",
+    "Qwen3.8-27B",
+    "Qwen3.8-Max",
+    "DeepSeek-V4-Pro",
+    "M$^3$LLM-27B"
+  ],
+  "benchmark_displayed_values": [
+    69.5,
+    70.32,
+    71.27,
+    71.52,
+    72.75,
+    76.22,
+    77.99,
+    78.61,
+    78.73,
+    78.94,
+    79.18,
+    81.04
+  ],
+  "selected_epochs": {
+    "M3LLM-7B": 3,
+    "M3LLM-27B": 1
+  },
+  "mechanical_curve_source": "Saved SVG coordinates; no missing raw training results were inferred"
+}

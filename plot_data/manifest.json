@@ -1,0 +1,147 @@
+{
+  "main_figures": 6,
+  "supplementary_figures": 5,
+  "supplementary_retrieval_images": 4,
+  "figures": [
+    {
+      "figure": "1",
+      "directory": "figure1",
+      "script": "figure1/plot_figure1.py",
+      "source_kind": "procedural conceptual drawing"
+    },
+    {
+      "figure": "2",
+      "directory": "figure2",
+      "script": "figure2/plot_figure2.py",
+      "source_kind": "editable Draw.io and preserved SVG/PNG"
+    },
+    {
+      "figure": "3",
+      "directory": "figure3",
+      "script": "figure3/plot_figure3.py",
+      "source_kind": "numeric source data and original plotting functions"
+    },
+    {
+      "figure": "4",
+      "directory": "figure4",
+      "script": "figure4/plot_figure4.py",
+      "source_kind": "numeric source data and original plotting functions"
+    },
+    {
+      "figure": "5",
+      "directory": "figure5",
+      "script": "figure5/plot_figure5.py",
+      "source_kind": "numeric source data and original plotting functions"
+    },
+    {
+      "figure": "6",
+      "directory": "figure6",
+      "script": "figure6/plot_figure6.py",
+      "source_kind": "numeric source data and original plotting functions"
+    },
+    {
+      "figure": "S1",
+      "directory": "supplementary/figure_s1",
+      "script": "supplementary/figure_s1/plot_figure_s1.py",
+      "source_kind": "preserved illustration; original drawing algorithm unavailable"
+    },
+    {
+      "figure": "S2",
+      "directory": "supplementary/figure_s2",
+      "script": "supplementary/figure_s2/plot_figure_s2.py",
+      "source_kind": "preserved illustration; original drawing algorithm unavailable"
+    },
+    {
+      "figure": "S3",
+      "directory": "supplementary/figure_s3",
+      "script": "supplementary/figure_s3/plot_figure_s3.py",
+      "source_kind": "preserved illustration; original drawing algorithm unavailable"
+    },
+    {
+      "figure": "S4",
+      "directory": "supplementary/figure_s4",
+      "script": "supplementary/figure_s4/plot_figure_s4.py",
+      "source_kind": "preserved illustration; original drawing algorithm unavailable"
+    },
+    {
+      "figure": "S5",
+      "directory": "supplementary/figure_s5",
+      "script": "supplementary/figure_s5/plot_figure_s5.py",
+      "source_kind": "preserved illustration; original drawing algorithm unavailable"
+    }
+  ],
+  "language": "English",
+  "query_labels": "Translated without changing query IDs, ordering or numeric results",
+  "original_plotting_functions_retained": {
+    "longitudinal": true,
+    "shear_vector": true,
+    "directional": true,
+    "verify": true,
+    "render": true,
+    "surface": true
+  },
+  "validation": "All figures exported; portable copy ran outside the project",
+  "main_png_comparison": [
+    {
+      "figure": 1,
+      "dimensions": [
+        6000,
+        6000
+      ],
+      "sha256_matches": true,
+      "changed_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "figure": 2,
+      "dimensions": [
+        3600,
+        2257
+      ],
+      "sha256_matches": true,
+      "changed_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "figure": 3,
+      "dimensions": [
+        4016,
+        5400
+      ],
+      "sha256_matches": true,
+      "changed_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "figure": 4,
+      "dimensions": [
+        4016,
+        3557
+      ],
+      "sha256_matches": false,
+      "changed_pixels": 8,
+      "max_channel_difference": 1
+    },
+    {
+      "figure": 5,
+      "dimensions": [
+        4016,
+        3600
+      ],
+      "sha256_matches": true,
+      "changed_pixels": 0,
+      "max_channel_difference": 0
+    },
+    {
+      "figure": 6,
+      "dimensions": [
+        4016,
+        2244
+      ],
+      "sha256_matches": true,
+      "changed_pixels": 0,
+      "max_channel_difference": 0
+    }
+  ],
+  "data_files_are_not_overwritten_by_plotting": true
+}

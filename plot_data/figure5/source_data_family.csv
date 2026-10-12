@@ -1,0 +1,13 @@
+tolerance,scope,family,n_pairs,success_rate,mrr
+0.01,bare_reconstruction,poisson_ratio,780,0.2949,0.1954
+0.01,bare_reconstruction,young_modulus,270,0.3444,0.2201
+0.01,bare_reconstruction,shear_modulus,210,0.5095,0.3313
+0.01,symmetry_only,poisson_ratio,780,0.5064,0.3359
+0.01,symmetry_only,young_modulus,270,0.5296,0.3375
+0.01,symmetry_only,shear_modulus,210,0.6333,0.4158
+0.01,morphology_only,poisson_ratio,780,0.4718,0.3007
+0.01,morphology_only,young_modulus,270,0.8370,0.6225
+0.01,morphology_only,shear_modulus,210,0.8905,0.7485
+0.01,all_stable_variants,poisson_ratio,780,0.7769,0.5387
+0.01,all_stable_variants,young_modulus,270,0.9259,0.7726
+0.01,all_stable_variants,shear_modulus,210,0.9190,0.8460

@@ -1,0 +1,758 @@
+{
+  "version": 1,
+  "title": "M3Sculptor lifecycle",
+  "type": "academic-diagram",
+  "source": "edited",
+  "profile": "academic-paper",
+  "theme": "academic-color",
+  "layout": "horizontal",
+  "counts": {
+    "nodes": 78,
+    "edges": 28,
+    "modules": 16
+  },
+  "nodes": [
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-91",
+      "label": "n-i2XjVW2n217h97qGDWA-91",
+      "type": "service",
+      "size": "xl"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-92",
+      "label": "n-i2XjVW2n217h97qGDWA-92",
+      "type": "service",
+      "size": "xl"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-90",
+      "label": "n-i2XjVW2n217h97qGDWA-90",
+      "type": "service",
+      "size": "xl"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-89",
+      "label": "n-i2XjVW2n217h97qGDWA-89",
+      "type": "service",
+      "size": "xl"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-87",
+      "label": "Database",
+      "type": "database",
+      "size": "xl"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-7",
+      "label": "nSdjJtzZxtsImRQRMBKPy-7",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-8",
+      "label": "nSdjJtzZxtsImRQRMBKPy-8",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-21",
+      "label": "nSdjJtzZxtsImRQRMBKPy-21",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-22",
+      "label": "nSdjJtzZxtsImRQRMBKPy-22",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-23",
+      "label": "nSdjJtzZxtsImRQRMBKPy-23",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-35",
+      "label": "nSdjJtzZxtsImRQRMBKPy-35",
+      "type": "service",
+      "module": "mSdjJtzZxtsImRQRMBKPy-34",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-36",
+      "label": "LLM",
+      "type": "service",
+      "module": "mSdjJtzZxtsImRQRMBKPy-34",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-37",
+      "label": "nSdjJtzZxtsImRQRMBKPy-37",
+      "type": "service",
+      "size": "medium"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-38",
+      "label": "Papers",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-40",
+      "label": "nSdjJtzZxtsImRQRMBKPy-40",
+      "type": "service",
+      "module": "mSdjJtzZxtsImRQRMBKPy-39",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-41",
+      "label": "LLM",
+      "type": "service",
+      "module": "mSdjJtzZxtsImRQRMBKPy-39",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-43",
+      "label": "nSdjJtzZxtsImRQRMBKPy-43",
+      "type": "service",
+      "module": "mSdjJtzZxtsImRQRMBKPy-42",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-44",
+      "label": "VL",
+      "type": "service",
+      "module": "mSdjJtzZxtsImRQRMBKPy-42",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-46",
+      "label": "Embedding",
+      "type": "embed",
+      "module": "mSdjJtzZxtsImRQRMBKPy-45",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-47",
+      "label": "nSdjJtzZxtsImRQRMBKPy-47",
+      "type": "service",
+      "module": "mSdjJtzZxtsImRQRMBKPy-45",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-52",
+      "label": "nSdjJtzZxtsImRQRMBKPy-52",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-58",
+      "label": "nSdjJtzZxtsImRQRMBKPy-58",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-59",
+      "label": "nSdjJtzZxtsImRQRMBKPy-59",
+      "type": "service",
+      "size": "large"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-66",
+      "label": "nSdjJtzZxtsImRQRMBKPy-66",
+      "type": "service",
+      "size": "medium"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-67",
+      "label": "nSdjJtzZxtsImRQRMBKPy-67",
+      "type": "service",
+      "size": "large"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-70",
+      "label": "markdown",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-48",
+      "label": "nSdjJtzZxtsImRQRMBKPy-48",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-3",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-49",
+      "label": "Knowledge &nbsp;Graph",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-3",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-4",
+      "label": "QA data",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-5",
+      "label": "n-i2XjVW2n217h97qGDWA-5",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-6",
+      "label": "n-i2XjVW2n217h97qGDWA-6",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-7",
+      "label": "MCQ data",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-8",
+      "label": "n-i2XjVW2n217h97qGDWA-8",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-9",
+      "label": "Human",
+      "type": "user",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-14",
+      "label": "n-i2XjVW2n217h97qGDWA-14",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-13",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-15",
+      "label": "LLM",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-13",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-19",
+      "label": "Stiffness Matrix",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-21",
+      "label": "FEM",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-22",
+      "label": "3D Structure",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-23",
+      "label": "DiT",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-24",
+      "label": "2D Figure",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-30",
+      "label": "n-i2XjVW2n217h97qGDWA-30",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-31",
+      "label": "User Input",
+      "type": "user",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-33",
+      "label": "Embedding",
+      "type": "embed",
+      "module": "m-i2XjVW2n217h97qGDWA-32",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-34",
+      "label": "n-i2XjVW2n217h97qGDWA-34",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-32",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-36",
+      "label": "Figure first Abstract first Node first",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-35",
+      "size": "medium"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-37",
+      "label": "n-i2XjVW2n217h97qGDWA-37",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-41",
+      "label": "n-i2XjVW2n217h97qGDWA-41",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-40",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-42",
+      "label": "LLM",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-40",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-43",
+      "label": "n-i2XjVW2n217h97qGDWA-43",
+      "type": "service",
+      "size": "small"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-54",
+      "label": "Retrieved results",
+      "type": "service",
+      "size": "small"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-59",
+      "label": "Rerank",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-58",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-60",
+      "label": "n-i2XjVW2n217h97qGDWA-60",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-58",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-62",
+      "label": "n-i2XjVW2n217h97qGDWA-62",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-63",
+      "label": "LLM",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-67",
+      "label": "n-i2XjVW2n217h97qGDWA-67",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-66",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-68",
+      "label": "LLM",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-66",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-70",
+      "label": "n-i2XjVW2n217h97qGDWA-70",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-69",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-71",
+      "label": "LLM",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-69",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-61",
+      "label": "nSdjJtzZxtsImRQRMBKPy-61",
+      "type": "user",
+      "module": "m-i2XjVW2n217h97qGDWA-88",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-62",
+      "label": "nSdjJtzZxtsImRQRMBKPy-62",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-88",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-63",
+      "label": "nSdjJtzZxtsImRQRMBKPy-63",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-88",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-64",
+      "label": "nSdjJtzZxtsImRQRMBKPy-64",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-88",
+      "size": "tiny"
+    },
+    {
+      "id": "nSdjJtzZxtsImRQRMBKPy-65",
+      "label": "nSdjJtzZxtsImRQRMBKPy-65",
+      "type": "service",
+      "module": "m-i2XjVW2n217h97qGDWA-88",
+      "size": "small"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-97",
+      "label": "Final Answer",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-101",
+      "label": "n-i2XjVW2n217h97qGDWA-101",
+      "type": "service",
+      "size": "small"
+    },
+    {
+      "id": "n-i2XjVW2n217h97qGDWA-103",
+      "label": "n-i2XjVW2n217h97qGDWA-103",
+      "type": "service",
+      "size": "small"
+    },
+    {
+      "id": "nAiO-EqbLMdHVNDcyAhdW-5",
+      "label": "$$\\circ$$",
+      "type": "formula",
+      "module": "mAiO-EqbLMdHVNDcyAhdW-10",
+      "size": "tiny"
+    },
+    {
+      "id": "nAiO-EqbLMdHVNDcyAhdW-6",
+      "label": "$$ \\ominus $$",
+      "type": "formula",
+      "module": "mAiO-EqbLMdHVNDcyAhdW-10",
+      "size": "tiny"
+    },
+    {
+      "id": "nAiO-EqbLMdHVNDcyAhdW-7",
+      "label": "$$\\bullet$$",
+      "type": "formula",
+      "module": "mAiO-EqbLMdHVNDcyAhdW-10",
+      "size": "tiny"
+    },
+    {
+      "id": "nAiO-EqbLMdHVNDcyAhdW-8",
+      "label": "$$\\oplus$$",
+      "type": "formula",
+      "module": "mAiO-EqbLMdHVNDcyAhdW-10",
+      "size": "tiny"
+    },
+    {
+      "id": "nAiO-EqbLMdHVNDcyAhdW-11",
+      "label": "nAiO-EqbLMdHVNDcyAhdW-11",
+      "type": "service",
+      "module": "mAiO-EqbLMdHVNDcyAhdW-10",
+      "size": "tiny"
+    },
+    {
+      "id": "nAiO-EqbLMdHVNDcyAhdW-12",
+      "label": "Morpohlogical Optimization",
+      "type": "document",
+      "size": "tiny"
+    },
+    {
+      "id": "nAiO-EqbLMdHVNDcyAhdW-16",
+      "label": "nAiO-EqbLMdHVNDcyAhdW-16",
+      "type": "service",
+      "module": "mAiO-EqbLMdHVNDcyAhdW-15",
+      "size": "tiny"
+    },
+    {
+      "id": "nAiO-EqbLMdHVNDcyAhdW-17",
+      "label": "LLM",
+      "type": "service",
+      "module": "mAiO-EqbLMdHVNDcyAhdW-15",
+      "size": "tiny"
+    },
+    {
+      "id": "nAiO-EqbLMdHVNDcyAhdW-22",
+      "label": "nAiO-EqbLMdHVNDcyAhdW-22",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "nAiO-EqbLMdHVNDcyAhdW-23",
+      "label": "Result",
+      "type": "service",
+      "size": "tiny"
+    },
+    {
+      "id": "njjl-e0pDcLukWtCwJjfM-1",
+      "label": "njjl-e0pDcLukWtCwJjfM-1",
+      "type": "service",
+      "size": "medium"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "from": "nAiO-EqbLMdHVNDcyAhdW-23",
+      "to": "n-i2XjVW2n217h97qGDWA-62",
+      "type": "primary"
+    },
+    {
+      "id": "edge-2",
+      "from": "nSdjJtzZxtsImRQRMBKPy-7",
+      "to": "nSdjJtzZxtsImRQRMBKPy-22",
+      "type": "primary"
+    },
+    {
+      "id": "edge-3",
+      "from": "nSdjJtzZxtsImRQRMBKPy-8",
+      "to": "nSdjJtzZxtsImRQRMBKPy-7",
+      "type": "primary"
+    },
+    {
+      "id": "edge-4",
+      "from": "nSdjJtzZxtsImRQRMBKPy-21",
+      "to": "nSdjJtzZxtsImRQRMBKPy-8",
+      "type": "primary"
+    },
+    {
+      "id": "edge-5",
+      "from": "nSdjJtzZxtsImRQRMBKPy-22",
+      "to": "nSdjJtzZxtsImRQRMBKPy-23",
+      "type": "primary"
+    },
+    {
+      "id": "edge-6",
+      "from": "nSdjJtzZxtsImRQRMBKPy-23",
+      "to": "nAiO-EqbLMdHVNDcyAhdW-16",
+      "type": "primary"
+    },
+    {
+      "id": "edge-7",
+      "from": "nSdjJtzZxtsImRQRMBKPy-37",
+      "to": "nSdjJtzZxtsImRQRMBKPy-40",
+      "type": "primary"
+    },
+    {
+      "id": "edge-8",
+      "from": "nSdjJtzZxtsImRQRMBKPy-37",
+      "to": "nSdjJtzZxtsImRQRMBKPy-43",
+      "type": "primary"
+    },
+    {
+      "id": "edge-9",
+      "from": "nSdjJtzZxtsImRQRMBKPy-37",
+      "to": "nSdjJtzZxtsImRQRMBKPy-67",
+      "type": "primary"
+    },
+    {
+      "id": "edge-10",
+      "from": "nSdjJtzZxtsImRQRMBKPy-48",
+      "to": "nSdjJtzZxtsImRQRMBKPy-46",
+      "type": "primary"
+    },
+    {
+      "id": "edge-11",
+      "from": "nSdjJtzZxtsImRQRMBKPy-43",
+      "to": "nSdjJtzZxtsImRQRMBKPy-48",
+      "type": "primary"
+    },
+    {
+      "id": "edge-12",
+      "from": "nSdjJtzZxtsImRQRMBKPy-40",
+      "to": "nSdjJtzZxtsImRQRMBKPy-48",
+      "type": "primary"
+    },
+    {
+      "id": "edge-13",
+      "from": "nSdjJtzZxtsImRQRMBKPy-67",
+      "to": "n-i2XjVW2n217h97qGDWA-14",
+      "type": "primary"
+    },
+    {
+      "id": "edge-14",
+      "from": "nSdjJtzZxtsImRQRMBKPy-67",
+      "to": "n-i2XjVW2n217h97qGDWA-70",
+      "type": "primary"
+    },
+    {
+      "id": "edge-15",
+      "from": "nSdjJtzZxtsImRQRMBKPy-47",
+      "to": "nSdjJtzZxtsImRQRMBKPy-59",
+      "type": "primary"
+    },
+    {
+      "id": "edge-16",
+      "from": "n-i2XjVW2n217h97qGDWA-8",
+      "to": "n-i2XjVW2n217h97qGDWA-5",
+      "type": "primary"
+    },
+    {
+      "id": "edge-17",
+      "from": "n-i2XjVW2n217h97qGDWA-8",
+      "to": "n-i2XjVW2n217h97qGDWA-6",
+      "type": "primary"
+    },
+    {
+      "id": "edge-18",
+      "from": "n-i2XjVW2n217h97qGDWA-30",
+      "to": "n-i2XjVW2n217h97qGDWA-34",
+      "type": "primary"
+    },
+    {
+      "id": "edge-19",
+      "from": "n-i2XjVW2n217h97qGDWA-30",
+      "to": "n-i2XjVW2n217h97qGDWA-41",
+      "type": "data"
+    },
+    {
+      "id": "edge-20",
+      "from": "n-i2XjVW2n217h97qGDWA-54",
+      "to": "n-i2XjVW2n217h97qGDWA-62",
+      "type": "primary"
+    },
+    {
+      "id": "edge-21",
+      "from": "n-i2XjVW2n217h97qGDWA-63",
+      "to": "n-i2XjVW2n217h97qGDWA-101",
+      "type": "primary"
+    },
+    {
+      "id": "edge-22",
+      "from": "n-i2XjVW2n217h97qGDWA-60",
+      "to": "n-i2XjVW2n217h97qGDWA-62",
+      "type": "data"
+    },
+    {
+      "id": "edge-23",
+      "from": "n-i2XjVW2n217h97qGDWA-67",
+      "to": "n-i2XjVW2n217h97qGDWA-8",
+      "type": "primary",
+      "label": "Evaluation"
+    },
+    {
+      "id": "edge-24",
+      "from": "n-i2XjVW2n217h97qGDWA-70",
+      "to": "n-i2XjVW2n217h97qGDWA-67",
+      "type": "primary",
+      "label": "Answer"
+    },
+    {
+      "id": "edge-25",
+      "from": "n-i2XjVW2n217h97qGDWA-15",
+      "to": "n-i2XjVW2n217h97qGDWA-68",
+      "type": "primary",
+      "label": "Question"
+    },
+    {
+      "id": "edge-26",
+      "from": "nAiO-EqbLMdHVNDcyAhdW-11",
+      "to": "nSdjJtzZxtsImRQRMBKPy-22",
+      "type": "primary"
+    },
+    {
+      "id": "edge-27",
+      "from": "nAiO-EqbLMdHVNDcyAhdW-16",
+      "to": "nAiO-EqbLMdHVNDcyAhdW-11",
+      "type": "primary"
+    },
+    {
+      "id": "edge-28",
+      "from": "nAiO-EqbLMdHVNDcyAhdW-16",
+      "to": "nAiO-EqbLMdHVNDcyAhdW-22",
+      "type": "primary"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mSdjJtzZxtsImRQRMBKPy-34",
+      "label": "mSdjJtzZxtsImRQRMBKPy-34"
+    },
+    {
+      "id": "mSdjJtzZxtsImRQRMBKPy-39",
+      "label": "mSdjJtzZxtsImRQRMBKPy-39"
+    },
+    {
+      "id": "mSdjJtzZxtsImRQRMBKPy-42",
+      "label": "mSdjJtzZxtsImRQRMBKPy-42"
+    },
+    {
+      "id": "mSdjJtzZxtsImRQRMBKPy-45",
+      "label": "mSdjJtzZxtsImRQRMBKPy-45"
+    },
+    {
+      "id": "m-i2XjVW2n217h97qGDWA-3",
+      "label": "m-i2XjVW2n217h97qGDWA-3"
+    },
+    {
+      "id": "m-i2XjVW2n217h97qGDWA-13",
+      "label": "m-i2XjVW2n217h97qGDWA-13"
+    },
+    {
+      "id": "m-i2XjVW2n217h97qGDWA-32",
+      "label": "m-i2XjVW2n217h97qGDWA-32"
+    },
+    {
+      "id": "m-i2XjVW2n217h97qGDWA-35",
+      "label": "Query Method"
+    },
+    {
+      "id": "m-i2XjVW2n217h97qGDWA-40",
+      "label": "Keyword Extraction"
+    },
+    {
+      "id": "m-i2XjVW2n217h97qGDWA-55",
+      "label": "Rerank Enhance"
+    },
+    {
+      "id": "m-i2XjVW2n217h97qGDWA-58",
+      "label": "m-i2XjVW2n217h97qGDWA-58"
+    },
+    {
+      "id": "m-i2XjVW2n217h97qGDWA-66",
+      "label": "m-i2XjVW2n217h97qGDWA-66"
+    },
+    {
+      "id": "m-i2XjVW2n217h97qGDWA-69",
+      "label": "m-i2XjVW2n217h97qGDWA-69"
+    },
+    {
+      "id": "m-i2XjVW2n217h97qGDWA-88",
+      "label": "m-i2XjVW2n217h97qGDWA-88"
+    },
+    {
+      "id": "mAiO-EqbLMdHVNDcyAhdW-10",
+      "label": "mAiO-EqbLMdHVNDcyAhdW-10"
+    },
+    {
+      "id": "mAiO-EqbLMdHVNDcyAhdW-15",
+      "label": "mAiO-EqbLMdHVNDcyAhdW-15"
+    }
+  ]
+}

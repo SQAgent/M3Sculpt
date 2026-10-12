@@ -1,0 +1,10 @@
+{
+  "figure_number": 1,
+  "data_kind": "Procedural conceptual geometry, not measured mechanical results",
+  "voxel_resolution": 40,
+  "strut_radius_fraction": 0.062,
+  "fcc_nodes": 14,
+  "fcc_edges": 36,
+  "morphology_boundary": "periodic",
+  "constituent_icon": "symbolic stiffness matrix"
+}

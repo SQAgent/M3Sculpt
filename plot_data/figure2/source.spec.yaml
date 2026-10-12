@@ -1,0 +1,1096 @@
+meta:
+  theme: academic-color
+  layout: horizontal
+  source: edited
+  title: M3Sculptor lifecycle
+  profile: academic-paper
+  figureType: workflow
+  description: Imported sidecar for the original two-page Draw.io file; publication
+    export uses page 0 directly to preserve source styling and HTML labels.
+modules:
+- id: mSdjJtzZxtsImRQRMBKPy-34
+  label: mSdjJtzZxtsImRQRMBKPy-34
+- id: mSdjJtzZxtsImRQRMBKPy-39
+  label: mSdjJtzZxtsImRQRMBKPy-39
+- id: mSdjJtzZxtsImRQRMBKPy-42
+  label: mSdjJtzZxtsImRQRMBKPy-42
+- id: mSdjJtzZxtsImRQRMBKPy-45
+  label: mSdjJtzZxtsImRQRMBKPy-45
+- id: m-i2XjVW2n217h97qGDWA-3
+  label: m-i2XjVW2n217h97qGDWA-3
+- id: m-i2XjVW2n217h97qGDWA-13
+  label: m-i2XjVW2n217h97qGDWA-13
+- id: m-i2XjVW2n217h97qGDWA-32
+  label: m-i2XjVW2n217h97qGDWA-32
+- id: m-i2XjVW2n217h97qGDWA-35
+  label: Query Method
+  style:
+    dashed: true
+- id: m-i2XjVW2n217h97qGDWA-40
+  label: Keyword Extraction
+- id: m-i2XjVW2n217h97qGDWA-55
+  label: Rerank Enhance
+- id: m-i2XjVW2n217h97qGDWA-58
+  label: m-i2XjVW2n217h97qGDWA-58
+- id: m-i2XjVW2n217h97qGDWA-66
+  label: m-i2XjVW2n217h97qGDWA-66
+- id: m-i2XjVW2n217h97qGDWA-69
+  label: m-i2XjVW2n217h97qGDWA-69
+- id: m-i2XjVW2n217h97qGDWA-88
+  label: m-i2XjVW2n217h97qGDWA-88
+- id: mAiO-EqbLMdHVNDcyAhdW-10
+  label: mAiO-EqbLMdHVNDcyAhdW-10
+  style:
+    dashed: true
+    dashPattern: 8 8
+- id: mAiO-EqbLMdHVNDcyAhdW-15
+  label: mAiO-EqbLMdHVNDcyAhdW-15
+nodes:
+- id: n-i2XjVW2n217h97qGDWA-91
+  label: n-i2XjVW2n217h97qGDWA-91
+  type: service
+  position:
+    x: -304
+    y: -552
+  size: xl
+  style:
+    fillColor: '#E8EEE8'
+    strokeColor: '#557C60'
+    strokeWidth: 1.2
+- id: n-i2XjVW2n217h97qGDWA-92
+  label: n-i2XjVW2n217h97qGDWA-92
+  type: service
+  position:
+    x: -824
+    y: -272
+  size: xl
+  style:
+    fillColor: '#EEE8F3'
+    strokeColor: '#705888'
+    strokeWidth: 1.2
+- id: n-i2XjVW2n217h97qGDWA-90
+  label: n-i2XjVW2n217h97qGDWA-90
+  type: service
+  position:
+    x: -928
+    y: -664
+  size: xl
+  style:
+    fillColor: '#E6F0F2'
+    strokeColor: '#26768C'
+    strokeWidth: 1.2
+- id: n-i2XjVW2n217h97qGDWA-89
+  label: n-i2XjVW2n217h97qGDWA-89
+  type: service
+  position:
+    x: -872
+    y: -448
+  size: xl
+  style:
+    fillColor: '#F3E3D9'
+    strokeColor: '#B26343'
+    strokeWidth: 1.2
+- id: n-i2XjVW2n217h97qGDWA-87
+  label: Database
+  type: database
+  position:
+    x: -600
+    y: -632
+  size: xl
+  style:
+    fillColor: '#F0F2F4'
+    strokeColor: '#68747D'
+    fontColor: '#28343B'
+    strokeWidth: 1.2
+- id: nSdjJtzZxtsImRQRMBKPy-7
+  label: nSdjJtzZxtsImRQRMBKPy-7
+  type: service
+  position:
+    x: -720
+    y: -296
+  size: tiny
+- id: nSdjJtzZxtsImRQRMBKPy-8
+  label: nSdjJtzZxtsImRQRMBKPy-8
+  type: service
+  position:
+    x: -640
+    y: -296
+  size: tiny
+- id: nSdjJtzZxtsImRQRMBKPy-21
+  label: nSdjJtzZxtsImRQRMBKPy-21
+  type: service
+  position:
+    x: -560
+    y: -296
+  size: tiny
+- id: nSdjJtzZxtsImRQRMBKPy-22
+  label: nSdjJtzZxtsImRQRMBKPy-22
+  type: service
+  position:
+    x: -808
+    y: -296
+  size: tiny
+- id: nSdjJtzZxtsImRQRMBKPy-23
+  label: nSdjJtzZxtsImRQRMBKPy-23
+  type: service
+  position:
+    x: -912
+    y: -296
+  size: tiny
+- id: nSdjJtzZxtsImRQRMBKPy-35
+  label: nSdjJtzZxtsImRQRMBKPy-35
+  type: service
+  module: mSdjJtzZxtsImRQRMBKPy-34
+  position:
+    x: -1056
+    y: -760
+  size: tiny
+- id: nSdjJtzZxtsImRQRMBKPy-36
+  label: LLM
+  type: service
+  module: mSdjJtzZxtsImRQRMBKPy-34
+  position:
+    x: -1056
+    y: -728
+  size: tiny
+  style:
+    fontColor: '#28343B'
+    fontSize: 20
+- id: nSdjJtzZxtsImRQRMBKPy-37
+  label: nSdjJtzZxtsImRQRMBKPy-37
+  type: service
+  position:
+    x: -1056
+    y: -632
+  size: medium
+- id: nSdjJtzZxtsImRQRMBKPy-38
+  label: Papers
+  type: service
+  position:
+    x: -936
+    y: -776
+  size: tiny
+  style:
+    fontColor: '#28343B'
+- id: nSdjJtzZxtsImRQRMBKPy-40
+  label: nSdjJtzZxtsImRQRMBKPy-40
+  type: service
+  module: mSdjJtzZxtsImRQRMBKPy-39
+  position:
+    x: -936
+    y: -576
+  size: tiny
+- id: nSdjJtzZxtsImRQRMBKPy-41
+  label: LLM
+  type: service
+  module: mSdjJtzZxtsImRQRMBKPy-39
+  position:
+    x: -936
+    y: -552
+  size: tiny
+  style:
+    fontColor: '#28343B'
+    fontSize: 20
+- id: nSdjJtzZxtsImRQRMBKPy-43
+  label: nSdjJtzZxtsImRQRMBKPy-43
+  type: service
+  module: mSdjJtzZxtsImRQRMBKPy-42
+  position:
+    x: -896
+    y: -696
+  size: tiny
+- id: nSdjJtzZxtsImRQRMBKPy-44
+  label: VL
+  type: service
+  module: mSdjJtzZxtsImRQRMBKPy-42
+  position:
+    x: -896
+    y: -672
+  size: tiny
+  style:
+    fontColor: '#28343B'
+    fontSize: 20
+- id: nSdjJtzZxtsImRQRMBKPy-46
+  label: Embedding
+  type: embed
+  module: mSdjJtzZxtsImRQRMBKPy-45
+  position:
+    x: -776
+    y: -752
+  size: tiny
+  style:
+    fontColor: '#28343B'
+- id: nSdjJtzZxtsImRQRMBKPy-47
+  label: nSdjJtzZxtsImRQRMBKPy-47
+  type: service
+  module: mSdjJtzZxtsImRQRMBKPy-45
+  position:
+    x: -776
+    y: -776
+  size: tiny
+- id: nSdjJtzZxtsImRQRMBKPy-52
+  label: nSdjJtzZxtsImRQRMBKPy-52
+  type: service
+  position:
+    x: -976
+    y: -656
+  size: tiny
+- id: nSdjJtzZxtsImRQRMBKPy-58
+  label: nSdjJtzZxtsImRQRMBKPy-58
+  type: service
+  position:
+    x: -1032
+    y: -592
+  size: tiny
+- id: nSdjJtzZxtsImRQRMBKPy-59
+  label: nSdjJtzZxtsImRQRMBKPy-59
+  type: service
+  position:
+    x: -600
+    y: -680
+  size: large
+- id: nSdjJtzZxtsImRQRMBKPy-66
+  label: nSdjJtzZxtsImRQRMBKPy-66
+  type: service
+  position:
+    x: -600
+    y: -616
+  size: medium
+- id: nSdjJtzZxtsImRQRMBKPy-67
+  label: nSdjJtzZxtsImRQRMBKPy-67
+  type: service
+  position:
+    x: -600
+    y: -560
+  size: large
+- id: nSdjJtzZxtsImRQRMBKPy-70
+  label: markdown
+  type: service
+  position:
+    x: -1040
+    y: -568
+  size: tiny
+  style:
+    fontColor: '#28343B'
+    fontSize: 20
+- id: nSdjJtzZxtsImRQRMBKPy-48
+  label: nSdjJtzZxtsImRQRMBKPy-48
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-3
+  position:
+    x: -816
+    y: -616
+  size: tiny
+- id: nSdjJtzZxtsImRQRMBKPy-49
+  label: Knowledge &nbsp;Graph
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-3
+  position:
+    x: -816
+    y: -576
+  size: tiny
+  style:
+    fontColor: '#28343B'
+    fontSize: 20
+- id: n-i2XjVW2n217h97qGDWA-4
+  label: QA data
+  type: service
+  position:
+    x: -1096
+    y: -472
+  size: tiny
+  style:
+    fontColor: '#28343B'
+- id: n-i2XjVW2n217h97qGDWA-5
+  label: n-i2XjVW2n217h97qGDWA-5
+  type: service
+  position:
+    x: -1096
+    y: -496
+  size: tiny
+- id: n-i2XjVW2n217h97qGDWA-6
+  label: n-i2XjVW2n217h97qGDWA-6
+  type: service
+  position:
+    x: -1096
+    y: -416
+  size: tiny
+- id: n-i2XjVW2n217h97qGDWA-7
+  label: MCQ data
+  type: service
+  position:
+    x: -1096
+    y: -392
+  size: tiny
+  style:
+    fontColor: '#28343B'
+- id: n-i2XjVW2n217h97qGDWA-8
+  label: n-i2XjVW2n217h97qGDWA-8
+  type: service
+  position:
+    x: -976
+    y: -456
+  size: tiny
+- id: n-i2XjVW2n217h97qGDWA-9
+  label: Human
+  type: user
+  position:
+    x: -976
+    y: -432
+  size: tiny
+  style:
+    fontColor: '#28343B'
+- id: n-i2XjVW2n217h97qGDWA-14
+  label: n-i2XjVW2n217h97qGDWA-14
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-13
+  position:
+    x: -656
+    y: -456
+  size: tiny
+- id: n-i2XjVW2n217h97qGDWA-15
+  label: LLM
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-13
+  position:
+    x: -656
+    y: -432
+  size: tiny
+  style:
+    fontColor: '#28343B'
+    fontSize: 20
+- id: n-i2XjVW2n217h97qGDWA-19
+  label: Stiffness Matrix
+  type: service
+  position:
+    x: -912
+    y: -256
+  size: tiny
+  style:
+    fontColor: '#28343B'
+    fontSize: 20
+- id: n-i2XjVW2n217h97qGDWA-21
+  label: FEM
+  type: service
+  position:
+    x: -808
+    y: -256
+  size: tiny
+  style:
+    fontColor: '#28343B'
+    fontSize: 20
+- id: n-i2XjVW2n217h97qGDWA-22
+  label: 3D Structure
+  type: service
+  position:
+    x: -720
+    y: -256
+  size: tiny
+  style:
+    fontColor: '#28343B'
+    fontSize: 20
+- id: n-i2XjVW2n217h97qGDWA-23
+  label: DiT
+  type: service
+  position:
+    x: -640
+    y: -256
+  size: tiny
+  style:
+    fontColor: '#28343B'
+    fontSize: 20
+- id: n-i2XjVW2n217h97qGDWA-24
+  label: 2D Figure
+  type: service
+  position:
+    x: -560
+    y: -256
+  size: tiny
+  style:
+    fontColor: '#28343B'
+    fontSize: 20
+- id: n-i2XjVW2n217h97qGDWA-30
+  label: n-i2XjVW2n217h97qGDWA-30
+  type: service
+  position:
+    x: -392
+    y: -760
+  size: tiny
+- id: n-i2XjVW2n217h97qGDWA-31
+  label: User Input
+  type: user
+  position:
+    x: -432
+    y: -760
+  size: tiny
+  style:
+    fontColor: '#28343B'
+- id: n-i2XjVW2n217h97qGDWA-33
+  label: Embedding
+  type: embed
+  module: m-i2XjVW2n217h97qGDWA-32
+  position:
+    x: -336
+    y: -688
+  size: tiny
+  style:
+    fontColor: '#28343B'
+- id: n-i2XjVW2n217h97qGDWA-34
+  label: n-i2XjVW2n217h97qGDWA-34
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-32
+  position:
+    x: -336
+    y: -720
+  size: tiny
+- id: n-i2XjVW2n217h97qGDWA-36
+  label: Figure first Abstract first Node first
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-35
+  position:
+    x: -408
+    y: -608
+  size: medium
+  style:
+    fontColor: '#28343B'
+    fontSize: 12
+- id: n-i2XjVW2n217h97qGDWA-37
+  label: n-i2XjVW2n217h97qGDWA-37
+  type: service
+  position:
+    x: -488
+    y: -616
+  size: tiny
+- id: n-i2XjVW2n217h97qGDWA-41
+  label: n-i2XjVW2n217h97qGDWA-41
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-40
+  position:
+    x: -216
+    y: -720
+  size: tiny
+- id: n-i2XjVW2n217h97qGDWA-42
+  label: LLM
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-40
+  position:
+    x: -216
+    y: -688
+  size: tiny
+  style:
+    fontColor: '#28343B'
+- id: n-i2XjVW2n217h97qGDWA-43
+  label: n-i2XjVW2n217h97qGDWA-43
+  type: service
+  position:
+    x: -248
+    y: -608
+  size: small
+- id: n-i2XjVW2n217h97qGDWA-54
+  label: Retrieved results
+  type: service
+  position:
+    x: -248
+    y: -552
+  size: small
+  style:
+    fontColor: '#28343B'
+- id: n-i2XjVW2n217h97qGDWA-59
+  label: Rerank
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-58
+  position:
+    x: 80
+    y: 104
+  size: tiny
+  style:
+    fontColor: '#28343B'
+- id: n-i2XjVW2n217h97qGDWA-60
+  label: n-i2XjVW2n217h97qGDWA-60
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-58
+  position:
+    x: 80
+    y: 72
+  size: tiny
+- id: n-i2XjVW2n217h97qGDWA-62
+  label: n-i2XjVW2n217h97qGDWA-62
+  type: service
+  position:
+    x: -408
+    y: -376
+  size: tiny
+- id: n-i2XjVW2n217h97qGDWA-63
+  label: LLM
+  type: service
+  position:
+    x: -408
+    y: -352
+  size: tiny
+  style:
+    fontColor: '#28343B'
+- id: n-i2XjVW2n217h97qGDWA-67
+  label: n-i2XjVW2n217h97qGDWA-67
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-66
+  position:
+    x: -856
+    y: -456
+  size: tiny
+- id: n-i2XjVW2n217h97qGDWA-68
+  label: LLM
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-66
+  position:
+    x: -856
+    y: -432
+  size: tiny
+  style:
+    fontColor: '#28343B'
+    fontSize: 20
+- id: n-i2XjVW2n217h97qGDWA-70
+  label: n-i2XjVW2n217h97qGDWA-70
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-69
+  position:
+    x: -736
+    y: -456
+  size: tiny
+- id: n-i2XjVW2n217h97qGDWA-71
+  label: LLM
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-69
+  position:
+    x: -736
+    y: -432
+  size: tiny
+  style:
+    fontColor: '#28343B'
+    fontSize: 20
+- id: nSdjJtzZxtsImRQRMBKPy-61
+  label: nSdjJtzZxtsImRQRMBKPy-61
+  type: user
+  module: m-i2XjVW2n217h97qGDWA-88
+  position:
+    x: -584
+    y: -784
+  size: tiny
+  style:
+    fillColor: '#F2F5F8'
+    strokeColor: '#526F96'
+    strokeWidth: 1.2
+- id: nSdjJtzZxtsImRQRMBKPy-62
+  label: nSdjJtzZxtsImRQRMBKPy-62
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-88
+  position:
+    x: -584
+    y: -752
+  size: tiny
+  style:
+    fillColor: '#E8EEE8'
+    strokeColor: '#557C60'
+    strokeWidth: 1.2
+- id: nSdjJtzZxtsImRQRMBKPy-63
+  label: nSdjJtzZxtsImRQRMBKPy-63
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-88
+  position:
+    x: -616
+    y: -752
+  size: tiny
+  style:
+    fillColor: '#F3E3D9'
+    strokeColor: '#B26343'
+    strokeWidth: 1.2
+- id: nSdjJtzZxtsImRQRMBKPy-64
+  label: nSdjJtzZxtsImRQRMBKPy-64
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-88
+  position:
+    x: -616
+    y: -784
+  size: tiny
+  style:
+    fillColor: '#E6F0F2'
+    strokeColor: '#26768C'
+    strokeWidth: 1.2
+- id: nSdjJtzZxtsImRQRMBKPy-65
+  label: nSdjJtzZxtsImRQRMBKPy-65
+  type: service
+  module: m-i2XjVW2n217h97qGDWA-88
+  position:
+    x: -600
+    y: -768
+  size: small
+- id: n-i2XjVW2n217h97qGDWA-97
+  label: Final Answer
+  type: service
+  position:
+    x: -248
+    y: -240
+  size: tiny
+  style:
+    fontColor: '#28343B'
+- id: n-i2XjVW2n217h97qGDWA-101
+  label: n-i2XjVW2n217h97qGDWA-101
+  type: service
+  position:
+    x: -360
+    y: -240
+  size: small
+- id: n-i2XjVW2n217h97qGDWA-103
+  label: n-i2XjVW2n217h97qGDWA-103
+  type: service
+  position:
+    x: -1000
+    y: -760
+  size: small
+- id: nAiO-EqbLMdHVNDcyAhdW-5
+  label: $$\circ$$
+  type: formula
+  module: mAiO-EqbLMdHVNDcyAhdW-10
+  position:
+    x: -1072
+    y: -312
+  size: tiny
+  style:
+    fontColor: '#28343B'
+- id: nAiO-EqbLMdHVNDcyAhdW-6
+  label: $$ \ominus $$
+  type: formula
+  module: mAiO-EqbLMdHVNDcyAhdW-10
+  position:
+    x: -1072
+    y: -288
+  size: tiny
+  style:
+    fontColor: '#28343B'
+- id: nAiO-EqbLMdHVNDcyAhdW-7
+  label: $$\bullet$$
+  type: formula
+  module: mAiO-EqbLMdHVNDcyAhdW-10
+  position:
+    x: -1088
+    y: -288
+  size: tiny
+  style:
+    fontColor: '#28343B'
+- id: nAiO-EqbLMdHVNDcyAhdW-8
+  label: $$\oplus$$
+  type: formula
+  module: mAiO-EqbLMdHVNDcyAhdW-10
+  position:
+    x: -1088
+    y: -312
+  size: tiny
+  style:
+    fontColor: '#28343B'
+- id: nAiO-EqbLMdHVNDcyAhdW-11
+  label: nAiO-EqbLMdHVNDcyAhdW-11
+  type: service
+  module: mAiO-EqbLMdHVNDcyAhdW-10
+  position:
+    x: -1080
+    y: -296
+  size: tiny
+- id: nAiO-EqbLMdHVNDcyAhdW-12
+  label: Morpohlogical Optimization
+  type: document
+  position:
+    x: -1080
+    y: -256
+  size: tiny
+  style:
+    fontColor: '#28343B'
+    fontSize: 20
+- id: nAiO-EqbLMdHVNDcyAhdW-16
+  label: nAiO-EqbLMdHVNDcyAhdW-16
+  type: service
+  module: mAiO-EqbLMdHVNDcyAhdW-15
+  position:
+    x: -992
+    y: -232
+  size: tiny
+- id: nAiO-EqbLMdHVNDcyAhdW-17
+  label: LLM
+  type: service
+  module: mAiO-EqbLMdHVNDcyAhdW-15
+  position:
+    x: -992
+    y: -200
+  size: tiny
+  style:
+    fontColor: '#28343B'
+    fontSize: 20
+- id: nAiO-EqbLMdHVNDcyAhdW-22
+  label: nAiO-EqbLMdHVNDcyAhdW-22
+  type: service
+  position:
+    x: -840
+    y: -216
+  size: tiny
+- id: nAiO-EqbLMdHVNDcyAhdW-23
+  label: Result
+  type: service
+  position:
+    x: -792
+    y: -216
+  size: tiny
+  style:
+    fontColor: '#28343B'
+    fontSize: 20
+- id: njjl-e0pDcLukWtCwJjfM-1
+  label: njjl-e0pDcLukWtCwJjfM-1
+  type: service
+  position:
+    x: -536
+    y: -448
+  size: medium
+edges:
+- from: nAiO-EqbLMdHVNDcyAhdW-23
+  to: n-i2XjVW2n217h97qGDWA-62
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    exitX: 1
+    exitY: 0.5
+    exitDx: 0
+    exitDy: 0
+    entryX: 0
+    entryY: 0.5
+    entryDx: 0
+    entryDy: 0
+  waypoints:
+  - x: -490
+    y: -220
+  - x: -490
+    y: -380
+- from: nSdjJtzZxtsImRQRMBKPy-7
+  to: nSdjJtzZxtsImRQRMBKPy-22
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    entryX: 1
+    entryY: 0.5
+    entryDx: 0
+    entryDy: 0
+- from: nSdjJtzZxtsImRQRMBKPy-8
+  to: nSdjJtzZxtsImRQRMBKPy-7
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    entryX: 1
+    entryY: 0.5
+    entryDx: 0
+    entryDy: 0
+- from: nSdjJtzZxtsImRQRMBKPy-21
+  to: nSdjJtzZxtsImRQRMBKPy-8
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    entryX: 1
+    entryY: 0.5
+    entryDx: 0
+    entryDy: 0
+- from: nSdjJtzZxtsImRQRMBKPy-22
+  to: nSdjJtzZxtsImRQRMBKPy-23
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    entryX: 1
+    entryY: 0.5
+    entryDx: 0
+    entryDy: 0
+- from: nSdjJtzZxtsImRQRMBKPy-23
+  to: nAiO-EqbLMdHVNDcyAhdW-16
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    entryX: 0.75
+    entryY: 0
+    entryDx: 0
+    entryDy: 0
+- from: nSdjJtzZxtsImRQRMBKPy-37
+  to: nSdjJtzZxtsImRQRMBKPy-40
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    exitX: 0.5
+    exitY: 1
+    exitDx: 0
+    exitDy: 0
+    entryX: 0
+    entryY: 0.5
+    entryDx: 0
+    entryDy: 0
+- from: nSdjJtzZxtsImRQRMBKPy-37
+  to: nSdjJtzZxtsImRQRMBKPy-43
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    exitX: 1
+    exitY: 0.5
+    exitDx: 0
+    exitDy: 0
+    entryX: 0
+    entryY: 0.5
+    entryDx: 0
+    entryDy: 0
+  waypoints:
+  - x: -960
+    y: -635
+  - x: -960
+    y: -700
+- from: nSdjJtzZxtsImRQRMBKPy-37
+  to: nSdjJtzZxtsImRQRMBKPy-67
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    exitX: 0.5
+    exitY: 1
+    exitDx: 0
+    exitDy: 0
+    entryX: 0
+    entryY: 0.5
+    entryDx: 0
+    entryDy: 0
+  waypoints:
+  - x: -1060
+    y: -580
+  - x: -990
+    y: -580
+  - x: -990
+    y: -530
+  - x: -760
+    y: -530
+  - x: -760
+    y: -560
+- from: nSdjJtzZxtsImRQRMBKPy-48
+  to: nSdjJtzZxtsImRQRMBKPy-46
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    entryX: 0.5
+    entryY: 1
+    entryDx: 0
+    entryDy: 0
+- from: nSdjJtzZxtsImRQRMBKPy-43
+  to: nSdjJtzZxtsImRQRMBKPy-48
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    entryX: 0.25
+    entryY: 0
+    entryDx: 0
+    entryDy: 0
+- from: nSdjJtzZxtsImRQRMBKPy-40
+  to: nSdjJtzZxtsImRQRMBKPy-48
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    entryX: 0
+    entryY: 0.5
+    entryDx: 0
+    entryDy: 0
+- from: nSdjJtzZxtsImRQRMBKPy-67
+  to: n-i2XjVW2n217h97qGDWA-14
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    entryX: 0.5
+    entryY: 0
+    entryDx: 0
+    entryDy: 0
+  waypoints:
+  - x: -600
+    y: -500
+  - x: -660
+    y: -500
+- from: nSdjJtzZxtsImRQRMBKPy-67
+  to: n-i2XjVW2n217h97qGDWA-70
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    entryX: 0.5
+    entryY: 0
+    entryDx: 0
+    entryDy: 0
+  waypoints:
+  - x: -600
+    y: -500
+  - x: -740
+    y: -500
+- from: nSdjJtzZxtsImRQRMBKPy-47
+  to: nSdjJtzZxtsImRQRMBKPy-59
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    entryX: 0
+    entryY: 0.5
+    entryDx: 0
+    entryDy: 0
+- from: n-i2XjVW2n217h97qGDWA-8
+  to: n-i2XjVW2n217h97qGDWA-5
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    entryX: 1
+    entryY: 0.5
+    entryDx: 0
+    entryDy: 0
+- from: n-i2XjVW2n217h97qGDWA-8
+  to: n-i2XjVW2n217h97qGDWA-6
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    entryX: 1
+    entryY: 0.5
+    entryDx: 0
+    entryDy: 0
+- from: n-i2XjVW2n217h97qGDWA-30
+  to: n-i2XjVW2n217h97qGDWA-34
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    entryX: 0.5
+    entryY: 0
+    entryDx: 0
+    entryDy: 0
+- from: n-i2XjVW2n217h97qGDWA-30
+  to: n-i2XjVW2n217h97qGDWA-41
+  type: data
+  style:
+    strokeColor: '#52616B'
+    dashed: true
+    entryX: 0
+    entryY: 0.25
+    entryDx: 0
+    entryDy: 0
+  waypoints:
+  - x: -290
+    y: -760
+  - x: -290
+    y: -730
+- from: n-i2XjVW2n217h97qGDWA-54
+  to: n-i2XjVW2n217h97qGDWA-62
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    exitX: 0.5
+    exitY: 1
+    exitDx: 0
+    exitDy: 0
+    entryX: 0.5
+    entryY: 0
+    entryDx: 0
+    entryDy: 0
+  waypoints:
+  - x: -245
+    y: -520
+  - x: -411
+    y: -520
+- from: n-i2XjVW2n217h97qGDWA-63
+  to: n-i2XjVW2n217h97qGDWA-101
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    entryX: 0.5
+    entryY: 0
+    entryDx: 0
+    entryDy: 0
+- from: n-i2XjVW2n217h97qGDWA-60
+  to: n-i2XjVW2n217h97qGDWA-62
+  type: data
+  style:
+    strokeColor: '#52616B'
+    dashed: true
+    entryX: 1
+    entryY: 0.5
+    entryDx: 0
+    entryDy: 0
+- from: n-i2XjVW2n217h97qGDWA-67
+  to: n-i2XjVW2n217h97qGDWA-8
+  type: primary
+  label: Evaluation
+  style:
+    strokeColor: '#52616B'
+    entryX: 1
+    entryY: 0.5
+    entryDx: 0
+    entryDy: 0
+  labelPosition: start
+- from: n-i2XjVW2n217h97qGDWA-70
+  to: n-i2XjVW2n217h97qGDWA-67
+  type: primary
+  label: Answer
+  style:
+    strokeColor: '#52616B'
+    entryX: 1
+    entryY: 0.5
+    entryDx: 0
+    entryDy: 0
+  labelPosition: start
+- from: n-i2XjVW2n217h97qGDWA-15
+  to: n-i2XjVW2n217h97qGDWA-68
+  type: primary
+  label: Question
+  style:
+    strokeColor: '#52616B'
+    entryX: 0.5
+    entryY: 1
+    entryDx: 0
+    entryDy: 0
+  waypoints:
+  - x: -660
+    y: -400
+  - x: -860
+    y: -400
+  labelPosition: start
+- from: nAiO-EqbLMdHVNDcyAhdW-11
+  to: nSdjJtzZxtsImRQRMBKPy-22
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    exitX: 0.5
+    exitY: 0
+    exitDx: 0
+    exitDy: 0
+    entryX: 0.5
+    entryY: 0
+    entryDx: 0
+    entryDy: 0
+  waypoints:
+  - x: -1080
+    y: -350
+  - x: -810
+    y: -350
+- from: nAiO-EqbLMdHVNDcyAhdW-16
+  to: nAiO-EqbLMdHVNDcyAhdW-11
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    exitX: 0.25
+    exitY: 0
+    exitDx: 0
+    exitDy: 0
+    entryX: 1
+    entryY: 0.5
+    entryDx: 0
+    entryDy: 0
+  waypoints:
+  - x: -1000
+    y: -300
+- from: nAiO-EqbLMdHVNDcyAhdW-16
+  to: nAiO-EqbLMdHVNDcyAhdW-22
+  type: primary
+  style:
+    strokeColor: '#52616B'
+    exitX: 1
+    exitY: 0.75
+    exitDx: 0
+    exitDy: 0
+    entryX: 0
+    entryY: 0.5
+    entryDx: 0
+    entryDy: 0
